@@ -54,7 +54,7 @@ namespace WEB.API_Login.Controllers
         // metodo para validar usuário
         private bool ValidateUser(UserTokenDTO user)
         {
-            if (user.User == "Admin" && user.Password == "@Dm!n.1122")
+            if (user.Email == "banco@semear.com" && user.Password == "B@nc0.1122")
             {
                 return true;
             }
