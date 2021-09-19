@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0NzXdQFVXQeatIW6hJ5uqqO0HIRxCFUy+60aVM3UXfAf0s/YQsUzPxofDCSipxEGqhO5k54QuO8PNh5M+fGhnA==",
+  "dgSpecHash": "b2dLDjwvPDJO2BLVWaoDaYriMCMw7XdEHfsbVx33JZg/AZuPwS2eZAl0zupJYONtzaejpRVo6TC4DpPxU4dc1Q==",
   "success": true,
-  "projectFilePath": "C:\\Projeto\\Api-Banco\\WEB.API-Login\\WEB.API-Login.csproj",
+  "projectFilePath": "C:\\Projeto\\WEB.Api-Banco\\WEB.API-Login\\WEB.API-Login.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Isabela\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.19\\microsoft.aspnetcore.authentication.jwtbearer.3.1.19.nupkg.sha512",
     "C:\\Users\\Isabela\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

@@ -3586,11 +3586,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projeto\\Api-Banco\\WEB.API-Login\\WEB.API-Login.csproj",
+      "projectUniqueName": "C:\\Projeto\\WEB.Api-Banco\\WEB.API-Login\\WEB.API-Login.csproj",
       "projectName": "WEB.API-Login",
-      "projectPath": "C:\\Projeto\\Api-Banco\\WEB.API-Login\\WEB.API-Login.csproj",
+      "projectPath": "C:\\Projeto\\WEB.Api-Banco\\WEB.API-Login\\WEB.API-Login.csproj",
       "packagesPath": "C:\\Users\\Isabela\\.nuget\\packages\\",
-      "outputPath": "C:\\Projeto\\Api-Banco\\WEB.API-Login\\obj\\",
+      "outputPath": "C:\\Projeto\\WEB.Api-Banco\\WEB.API-Login\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
