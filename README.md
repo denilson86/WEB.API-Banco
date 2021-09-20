@@ -12,3 +12,6 @@ Contem:
 # WEB.APi.Login
 Contem:
   Metodo de Login que faz a validação do usuario, retona o token (JWT)
+  Dados Moc para autenticação:
+    "Email": "banco@semear.com",
+    "Password": "B@nco.1122"

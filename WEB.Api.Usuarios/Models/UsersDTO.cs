@@ -13,5 +13,6 @@ namespace WEB.Api.Usuarios.Models
         public string Senha { get; set; }
 
         public List<UsersDTO> Listusers { get; set; }
+
     }
 }

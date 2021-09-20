@@ -5,8 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace WEB.Api.Usuarios
 {
@@ -49,11 +53,11 @@ namespace WEB.Api.Usuarios
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             // Ativando middlewares do Swagger
             app.UseSwagger();
             app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "WEB.Api.Usuarios"));
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
