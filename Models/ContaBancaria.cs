@@ -8,6 +8,7 @@ namespace WEB.API_Banco.Models
     public class ContaBancaria
     {
         public int idCounta { get; set; }
-        private double saldo { get; set; }
+        public double saldo { get; set; }
+        public DateTime dataAbertura { get; set; }
     }
 }
