@@ -19,6 +19,11 @@ namespace WEB.API_Login.Controllers
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Realiza Login do uusário, e retorna o Token (JWT)
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Signin([FromBody] UserTokenDTO user)
         {
@@ -36,7 +41,10 @@ namespace WEB.API_Login.Controllers
             }
         }
 
-        // metodo para Gerar Token
+        /// <summary>
+        /// metodo para Gerar Token
+        /// </summary>
+        /// <returns></returns>
         private string GenerateTokenJWT()
         {
             var issuer = _configuration["Jwt:Issuer"];
@@ -51,10 +59,10 @@ namespace WEB.API_Login.Controllers
             return stringToken;
         }
 
-        // metodo para validar usuário
+        //metodo para validar usuario
         private bool ValidateUser(UserTokenDTO user)
         {
-            if (user.Email == "banco@semear.com" && user.Password == "B@nc0.1122")
+            if (user.Email == "banco@semear.com" && user.Password == "B@nco.1122")
             {
                 return true;
             }
