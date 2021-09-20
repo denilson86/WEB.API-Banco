@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace WEB.API_Banco.Models
 {
-    public class ContaBancaria
+    public class MovimentoDTO
     {
-        public int idCounta { get; set; }
+        public double valor { get; set; }
         public double saldo { get; set; }
-        public DateTime dataAbertura { get; set; }
     }
 }
