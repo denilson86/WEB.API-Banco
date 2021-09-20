@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,19 +23,7 @@ namespace WEB.API_Banco
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-
-            // Configurando Swagger
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1",
-                    new OpenApiInfo
-                    {
-                        Title = "WEB.Api.Banco",
-                        Version = "v1",
-                        Description = "Swagger WEB.Api.Banco"
-                    });
-            });
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,13 +40,11 @@ namespace WEB.API_Banco
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-
-            // Ativando middlewares do Swagger
-            app.UseSwagger();
-            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "WEB.Api.Banco"));
+            app.UseStaticFiles();
 
             app.UseRouting();
-            //app.UseAuthorization();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
